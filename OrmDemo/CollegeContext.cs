@@ -5,6 +5,8 @@ using Microsoft.Extensions.Logging;
 public class CollegeContext : DbContext
 {
     public DbSet<User> Users => Set<User>();
+    public DbSet<Group> Groups => Set<Group>();
+    public DbSet<Student> Students => Set<Student>();
 
     protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
     {
